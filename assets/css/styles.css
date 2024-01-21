@@ -63,7 +63,6 @@ body {
 }
 
 #social a {
-  background-color: var(--primary-color);
   border-radius: 10px;
   color: var(--color);
   padding: 5%;
@@ -73,8 +72,37 @@ body {
   width: 95%;
 }
 
+#social a:focus {
+  font-weight: 600;
+}
+
+#whatsapp {
+  background-color: #25D366;
+}
+
+#linkedin {
+  background-color: #0077B5;
+}
+
+#github {
+  background-color: #181717;
+}
+
+#gmail {
+  background-color: #DB4437;
+}
+
 footer {
   font-size: 1.2rem;
   padding: 0 5%;
   text-align: center;
+}
+
+.bi-heart-fill {
+  color: #DB4437;
+  font-size: 1rem;
+}
+
+.bi-c-circle {
+  font-size: 1rem;
 }
