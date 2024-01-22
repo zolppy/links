@@ -6,7 +6,7 @@ html {
 
 :root {
   --black: #000;
-  --blue: #6f6;
+  --blue: #66f;
   --white: #d5d5d5;
   --whatsapp-color: #25D366;
   --linkedin-color: #0077B5;
@@ -38,10 +38,16 @@ body {
 }
 
 #me {
-  border: 5px solid var(--blue);
   border-radius: 50%;
   display: block;
   margin: 7% auto;
+  animation: sharpness 2s linear 1;
+}
+
+#me:hover {
+  border: 5px solid var(--blue);
+  cursor: pointer;
+  transition: .2s ease-in;
 }
 
 #name,
@@ -127,5 +133,23 @@ footer {
 
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes sharpness {
+  0% {
+    filter: blur(100px);
+  }
+  25% {
+    filter: blur(75px);
+  }
+  50% {
+    filter: blur(50px);
+  }
+  75% {
+    filter: blur(25px);
+  }
+  100% {
+    filter: blur(0px);
   }
 }
