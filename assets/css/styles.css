@@ -76,20 +76,24 @@ body {
   font-weight: 600;
 }
 
+#social a:hover * {
+  animation: flip 1.5s linear 1;
+}
+
 #whatsapp {
-  background-color: #25D366;
+  background-image: linear-gradient(180deg, #25D366 0%, #96ff96 50%, #25D366 100%);
 }
 
 #linkedin {
-  background-color: #0077B5;
+  background-image: linear-gradient(180deg, #0077B5 0%, #96b4ff 50%, #0077B5 100%);
 }
 
 #github {
-  background-color: #181717;
+  background-image: linear-gradient(180deg, #181717 0%, #363434 50%, #181717 100%);
 }
 
 #gmail {
-  background-color: #DB4437;
+  background-image: linear-gradient(180deg, #DB4437 0%, #ff9696 50%, #DB4437 100%);
 }
 
 footer {
@@ -105,4 +109,14 @@ footer {
 
 .bi-c-circle {
   font-size: 1rem;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
 }
