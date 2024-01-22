@@ -1,2 +1,2 @@
 # linktree
-Árvore de links para contato.
+Lista de links para contato.
