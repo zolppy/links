@@ -5,9 +5,13 @@ html {
 }
 
 :root {
-  --background-color: #222;
-  --color: #f5f5f5;
-  --primary-color: #66f;
+  --black: #000;
+  --blue: #6f6;
+  --white: #d5d5d5;
+  --whatsapp-color: #25D366;
+  --linkedin-color: #0077B5;
+  --github-color: rgba(255, 255, 255, .5); /* Por o preto tema do github não dará contraste com o fundo */
+  --gmail-color: #DB4437;
 }
 
 * {
@@ -17,8 +21,8 @@ html {
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--color);
+  background-color: var(--black);
+  color: var(--white);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -34,7 +38,7 @@ body {
 }
 
 #me {
-  border: 5px solid var(--primary-color);
+  border: 5px solid var(--blue);
   border-radius: 50%;
   display: block;
   margin: 7% auto;
@@ -64,8 +68,9 @@ body {
 
 #social a {
   border-radius: 10px;
-  color: var(--color);
   padding: 5%;
+  border-width: 1px;
+  border-style: solid;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -80,20 +85,24 @@ body {
   animation: flip 1.5s linear 1;
 }
 
-#whatsapp {
-  background-image: linear-gradient(180deg, #25D366 0%, #96ff96 50%, #25D366 100%);
+#social a:first-child {
+  border-color: var(--whatsapp-color);
+  color: var(--whatsapp-color);
 }
 
-#linkedin {
-  background-image: linear-gradient(180deg, #0077B5 0%, #96b4ff 50%, #0077B5 100%);
+#social a:nth-child(2) {
+  border-color: var(--linkedin-color);
+  color: var(--linkedin-color);
 }
 
-#github {
-  background-image: linear-gradient(180deg, #181717 0%, #363434 50%, #181717 100%);
+#social a:nth-child(3) {
+  border-color: var(--github-color);
+  color: var(--github-color);
 }
 
-#gmail {
-  background-image: linear-gradient(180deg, #DB4437 0%, #ff9696 50%, #DB4437 100%);
+#social a:nth-child(4) {
+  border-color: var(--gmail-color);
+  color: var(--gmail-color);
 }
 
 footer {
