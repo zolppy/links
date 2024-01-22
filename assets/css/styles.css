@@ -139,17 +139,22 @@ footer {
 @keyframes sharpness {
   0% {
     filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
   }
   25% {
     filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
   }
   50% {
     filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
   }
   75% {
     filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
   }
   100% {
     filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
   }
 }
