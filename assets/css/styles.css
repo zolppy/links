@@ -12,6 +12,9 @@ html {
   --linkedin-color: #0077B5;
   --github-color: rgba(255, 255, 255, .5); /* Por o preto tema do github não dará contraste com o fundo */
   --gmail-color: #DB4437;
+  --beecrowd-color: #FFCA30;
+  --curriculum-color: magenta;
+  --certifications-color: teal;
 }
 
 * {
@@ -109,6 +112,21 @@ body {
 #social a:nth-child(4) {
   border-color: var(--gmail-color);
   color: var(--gmail-color);
+}
+
+#social a:nth-child(5) {
+  border-color: var(--beecrowd-color);
+  color: var(--beecrowd-color);
+}
+
+#social a:nth-child(6) {
+  border-color: var(--curriculum-color);
+  color: var(--curriculum-color);
+}
+
+#social a:nth-child(7) {
+  border-color: var(--certifications-color);
+  color: var(--certifications-color);
 }
 
 footer {
