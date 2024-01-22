@@ -10,7 +10,7 @@ html {
   --white: #d5d5d5;
   --whatsapp-color: #25D366;
   --linkedin-color: #0077B5;
-  --github-color: rgba(255, 255, 255, .5); /* Por o preto tema do github não dará contraste com o fundo */
+  --github-color: #ffffff80; /* Por o preto tema do github não dará contraste com o fundo */
   --gmail-color: #DB4437;
   --beecrowd-color: #FFCA30;
   --curriculum-color: magenta;
@@ -67,7 +67,7 @@ body {
   margin-top: 3%;
 }
 
-#social {
+#links {
   margin: 7% 0;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@ body {
   gap: 2vh;
 }
 
-#social a {
+#links a {
   border-radius: 10px;
   padding: 5%;
   border-width: 1px;
@@ -86,45 +86,45 @@ body {
   width: 95%;
 }
 
-#social a:focus {
+#links a:focus {
   font-weight: 600;
 }
 
-#social a:hover * {
+#links a:hover * {
   animation: flip 1.5s linear 1;
 }
 
-#social a:first-child {
+#links a:first-child {
   border-color: var(--whatsapp-color);
   color: var(--whatsapp-color);
 }
 
-#social a:nth-child(2) {
+#links a:nth-child(2) {
   border-color: var(--linkedin-color);
   color: var(--linkedin-color);
 }
 
-#social a:nth-child(3) {
+#links a:nth-child(3) {
   border-color: var(--github-color);
   color: var(--github-color);
 }
 
-#social a:nth-child(4) {
+#links a:nth-child(4) {
   border-color: var(--gmail-color);
   color: var(--gmail-color);
 }
 
-#social a:nth-child(5) {
+#links a:nth-child(5) {
   border-color: var(--beecrowd-color);
   color: var(--beecrowd-color);
 }
 
-#social a:nth-child(6) {
+#links a:nth-child(6) {
   border-color: var(--curriculum-color);
   color: var(--curriculum-color);
 }
 
-#social a:nth-child(7) {
+#links a:nth-child(7) {
   border-color: var(--certifications-color);
   color: var(--certifications-color);
 }
