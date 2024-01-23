@@ -15,6 +15,8 @@ html {
   --beecrowd-color: #FFCA30;
   --curriculum-color: magenta;
   --certifications-color: teal;
+  --apparition-time: 1s;
+  --sharpness-time: 2s;
 }
 
 * {
@@ -30,14 +32,14 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  margin: 0 auto;
-  max-width: 480px;
-  min-width: 320px;
 }
 
 #container {
   margin: 0 auto;
-  width: 98%;
+  max-width: 480px;
+  min-width: 320px;
+  overflow-x: hidden;
+  border: 1px solid red;
 }
 
 #me {
@@ -90,6 +92,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   width: 95%;
+  transform: translate(105%);
 }
 
 #links a:focus {
@@ -106,36 +109,50 @@ body {
 #links a:first-child {
   border-color: var(--whatsapp-color);
   color: var(--whatsapp-color);
+  animation: apparition var(--apparition-time) ease-in-out var(--sharpness-time) 1;
+  animation-fill-mode: forwards;
 }
 
 #links a:nth-child(2) {
   border-color: var(--linkedin-color);
   color: var(--linkedin-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 1)) 1;
+  animation-fill-mode: forwards;
 }
 
 #links a:nth-child(3) {
   border-color: var(--github-color);
   color: var(--github-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 2)) 1;
+  animation-fill-mode: forwards;
 }
 
 #links a:nth-child(4) {
   border-color: var(--gmail-color);
   color: var(--gmail-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 3)) 1;
+  animation-fill-mode: forwards;
 }
 
 #links a:nth-child(5) {
   border-color: var(--beecrowd-color);
   color: var(--beecrowd-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 4)) 1;
+  animation-fill-mode: forwards;
 }
 
 #links a:nth-child(6) {
   border-color: var(--curriculum-color);
   color: var(--curriculum-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 5)) 1;
+  animation-fill-mode: forwards;
 }
 
-#links a:nth-child(7) {
+#links a:last-child {
   border-color: var(--certifications-color);
   color: var(--certifications-color);
+  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 6)) 1;
+  animation-fill-mode: forwards;
 }
 
 footer {
@@ -199,5 +216,14 @@ footer {
     -webkit-filter: blur(0);
     -moz-filter: blur(0);
     -o-filter: blur(0);
+  }
+}
+
+@keyframes apparition {
+  from {
+    transform: translateX(initial);
+  }
+  to {
+    transform: translateX(0);
   }
 }
