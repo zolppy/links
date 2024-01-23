@@ -31,8 +31,8 @@ body {
   font-weight: 400;
   line-height: 1;
   margin: 0 auto;
-  min-width: 320px;
   max-width: 480px;
+  min-width: 320px;
 }
 
 #container {
@@ -45,12 +45,18 @@ body {
   display: block;
   margin: 7% auto;
   animation: sharpness 2s linear 1;
+  -webkit-animation: sharpness 2s linear 1;
+  -moz-animation: sharpness 2s linear 1;
+  -o-animation: sharpness 2s linear 1;
 }
 
 #me:hover {
   border: 5px solid var(--blue);
   cursor: pointer;
   transition: .2s ease-in;
+  -webkit-transition: .2s ease-in;
+  -moz-transition: .2s ease-in;
+  -o-transition: .2s ease-in;
 }
 
 #name,
@@ -92,6 +98,9 @@ body {
 
 #links a:hover * {
   animation: flip 1.5s linear 1;
+  -webkit-animation: flip 1.5s linear 1;
+  -moz-animation: flip 1.5s linear 1;
+  -o-animation: flip 1.5s linear 1;
 }
 
 #links a:first-child {
@@ -146,33 +155,49 @@ footer {
 
 @keyframes flip {
   from {
-    transform: rotateY(0deg);
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
   }
 
   to {
     transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
   }
 }
 
 @keyframes sharpness {
   0% {
     filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
+    -webkit-filter: blur(100px);
+    -moz-filter: blur(100px);
+    -o-filter: blur(100px);
   }
   25% {
     filter: blur(75px);
-    -webkit-backdrop-filter: blur(75px);
+    -webkit-filter: blur(75px);
+    -moz-filter: blur(75px);
+    -o-filter: blur(75px);
   }
   50% {
     filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
   }
   75% {
     filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
   }
   100% {
-    filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
   }
 }
