@@ -39,7 +39,6 @@ body {
   max-width: 480px;
   min-width: 320px;
   overflow-x: hidden;
-  border: 1px solid red;
 }
 
 #me {
@@ -93,6 +92,73 @@ body {
   text-transform: uppercase;
   width: 95%;
   transform: translate(105%);
+  animation: apparition var(--apparition-time) ease-in-out forwards;
+  -webkit-animation: apparition var(--apparition-time) ease-in-out forwards;
+  -moz-animation: apparition var(--apparition-time) ease-in-out forwards;
+  -o-animation: apparition var(--apparition-time) ease-in-out forwards;
+}
+
+#links a:first-child {
+  border-color: var(--whatsapp-color);
+  color: var(--whatsapp-color);
+  animation-delay: var(--sharpness-time);
+  -webkit-animation-delay: var(--sharpness-time);
+  -moz-animation-delay: var(--sharpness-time);
+  -o-animation-delay: var(--sharpness-time);
+}
+
+#links a:nth-child(2) {
+  border-color: var(--linkedin-color);
+  color: var(--linkedin-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 1));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 1));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 1));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 1));
+}
+
+#links a:nth-child(3) {
+  border-color: var(--github-color);
+  color: var(--github-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 2));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 2));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 2));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 2));
+}
+
+#links a:nth-child(4) {
+  border-color: var(--gmail-color);
+  color: var(--gmail-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 3));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 3));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 3));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 3));
+}
+
+#links a:nth-child(5) {
+  border-color: var(--beecrowd-color);
+  color: var(--beecrowd-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 4));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 4));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 4));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 4));
+}
+
+#links a:nth-child(6) {
+  border-color: var(--curriculum-color);
+  color: var(--curriculum-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 5));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 5));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 5));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 5));
+}
+
+#links a:last-child {
+  border-color: var(--certifications-color);
+  color: var(--certifications-color);
+  animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 6));
+  -webkit-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 6));
+  -moz-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 6));
+  -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 6));
 }
 
 #links a:focus {
@@ -106,58 +172,10 @@ body {
   -o-animation: flip 1.5s linear 1;
 }
 
-#links a:first-child {
-  border-color: var(--whatsapp-color);
-  color: var(--whatsapp-color);
-  animation: apparition var(--apparition-time) ease-in-out var(--sharpness-time) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:nth-child(2) {
-  border-color: var(--linkedin-color);
-  color: var(--linkedin-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 1)) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:nth-child(3) {
-  border-color: var(--github-color);
-  color: var(--github-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 2)) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:nth-child(4) {
-  border-color: var(--gmail-color);
-  color: var(--gmail-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 3)) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:nth-child(5) {
-  border-color: var(--beecrowd-color);
-  color: var(--beecrowd-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 4)) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:nth-child(6) {
-  border-color: var(--curriculum-color);
-  color: var(--curriculum-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 5)) 1;
-  animation-fill-mode: forwards;
-}
-
-#links a:last-child {
-  border-color: var(--certifications-color);
-  color: var(--certifications-color);
-  animation: apparition var(--apparition-time) ease-in-out calc(var(--sharpness-time) + (var(--apparition-time) * 6)) 1;
-  animation-fill-mode: forwards;
-}
-
 footer {
   font-size: 1.2rem;
   padding: 0 5%;
+  padding: 5%;
   text-align: center;
 }
 
@@ -222,8 +240,14 @@ footer {
 @keyframes apparition {
   from {
     transform: translateX(initial);
+    -webkit-transform: translateX(initial);
+    -moz-transform: translateX(initial);
+    -o-transform: translateX(initial);
   }
   to {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 }
