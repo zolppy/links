@@ -5,9 +5,8 @@ html {
 }
 
 :root {
-  --black: #000;
-  --blue: #66f;
-  --white: #d5d5d5;
+  --black: #312;
+  --white: #def;
   --whatsapp-color: #25D366;
   --linkedin-color: #0077B5;
   --github-color: #ffffff80; /* Por o preto tema do github não dará contraste com o fundo */
@@ -32,6 +31,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
+  transition: 2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #container {
@@ -41,28 +45,42 @@ body {
   overflow-x: hidden;
 }
 
+#toggle-theme {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  margin: 2% 0 0 2%;
+  height: 3em;
+  width: 3em;
+}
+
+#toggle-theme:hover {
+  cursor: pointer;
+}
+
+#theme-icon {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
 #me {
   border-radius: 50%;
   display: block;
   margin: 7% auto;
+  width: 70%;
   animation: sharpness 2s linear 1;
   -webkit-animation: sharpness 2s linear 1;
   -moz-animation: sharpness 2s linear 1;
   -o-animation: sharpness 2s linear 1;
 }
 
-#me:hover {
-  border: 5px solid var(--blue);
-  cursor: pointer;
-  transition: .2s ease-in;
-  -webkit-transition: .2s ease-in;
-  -moz-transition: .2s ease-in;
-  -o-transition: .2s ease-in;
+#name {
+  text-transform: uppercase;
 }
 
 #name,
 #job-position {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -84,9 +102,10 @@ body {
 
 #links a {
   border-radius: 10px;
-  padding: 5%;
-  border-width: 1px;
   border-style: solid;
+  border-width: 2px;
+  font-weight: 600;
+  padding: 5%;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -161,21 +180,17 @@ body {
   -o-animation-delay: calc(var(--sharpness-time) + (var(--apparition-time) * 6));
 }
 
-#links a:focus {
-  font-weight: 600;
-}
-
 #links a:hover * {
-  animation: flip 1.5s linear 1;
-  -webkit-animation: flip 1.5s linear 1;
-  -moz-animation: flip 1.5s linear 1;
-  -o-animation: flip 1.5s linear 1;
+  animation: flip 1.5s linear .4s;
+  -webkit-animation: flip 1.5s linear .4s;
+  -moz-animation: flip 1.5s linear .4s;
+  -o-animation: flip 1.5s linear .4s;
 }
 
 footer {
-  font-size: 1.2rem;
-  padding: 0 5%;
-  padding: 5%;
+  max-width: 480px;
+  min-width: 320px;
+  padding: .5em;
   text-align: center;
 }
 
@@ -250,4 +265,20 @@ footer {
     -moz-transform: translateX(0);
     -o-transform: translateX(0);
   }
+}
+
+/* Modo claro */
+
+body.light {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+body.light #theme-icon {
+  color: var(--black);
+}
+
+body.light #links a:nth-child(3) {
+  border-color: var(--black);
+  color: var(--black);
 }

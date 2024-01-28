@@ -4,25 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meus links</title>
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-<body>
+<body class="dark">
   <main>
     <div id="container">
+      <button type="button" id="toggle-theme">
+        <i class="bi bi-sun" id="theme-icon"></i>
+      </button>
       <img
         id="me"
         src="assets/img/me.png"
         alt="Jovem pardo de cabelos lisos, escuros e compridos, presos, com camisa branca de mangas e gola curta, de detalhes pretos, ao fundo, paisagem natural, com grama, árvores, plantas. Mais alguns detalhes fisionômicos incluem: olhos e sobrancelhas escuras, sobrancelhas e lábios grossos, nariz redondo, ausência de pelos faciais (barba, barbicha, bigode)."
-        width="320"
-        height=""
       />
-      <p id="name">Gabriel Cavalcante de Jesus Oliveira</p>
-      <p id="job-position">Desenvolvedor Front-end</p>
+      <p id="name">Gabriel Cavalcante</p>
+      <p id="job-position">Desenvolvedor Front-end <i class="bi bi-laptop"></i></p>
       <div id="links">
         <a href="http://wa.me/5574981343313" target="_blank">
           <div>
