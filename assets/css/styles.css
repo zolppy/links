@@ -5,7 +5,7 @@ html {
 }
 
 :root {
-  --black: #312;
+  --black: #000;
   --white: #f5f5f5;
   --whatsapp-color: #25D366;
   --linkedin-color: #0077B5;
@@ -25,23 +25,23 @@ html {
 }
 
 body {
-  background-color: var(--black);
+  background-color: teal;
   color: var(--white);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  transition: 2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
-#container {
+#container,
+footer {
   margin: 0 auto;
   max-width: 480px;
   min-width: 320px;
+}
+
+#container {
+  background-color: var(--black);
   overflow-x: hidden;
 }
 
@@ -188,10 +188,9 @@ body {
 }
 
 footer {
-  max-width: 480px;
-  min-width: 320px;
   padding: .5em;
   text-align: center;
+  background-color: #000;
 }
 
 .bi-heart-fill {
@@ -269,9 +268,10 @@ footer {
 
 /* Modo claro */
 
-body.light {
+body.light #container,
+body.light footer {
   background-color: var(--white);
-  color: var(--dark);
+  color: var(--black);
 }
 
 body.light #theme-icon {
