@@ -1,3 +1,3 @@
 # My Links
 
- Links para minhas redes sociais, currículo e outros. 
+ Links para minhas redes sociais, GitHub, currículo e afins.
