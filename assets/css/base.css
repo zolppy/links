@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --soft-black: #111;
+  --soft-white: #ccc;
+  --apparition-time: 1s;
+  --sharpness-time: 2s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--soft-black);
+  color: var(--soft-white);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  line-height: 1;
+  font-size: 1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+}
