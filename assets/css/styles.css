@@ -1,11 +1,16 @@
 @import url("./base.css");
 @import url("./generics.css");
 
+body {
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+}
+
 #container,
 footer {
   margin: 0 auto;
   max-width: 480px;
   min-width: 320px;
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
 
 #container {
@@ -70,41 +75,47 @@ footer {
   -webkit-animation: apparition var(--apparition-time) ease-in-out forwards;
   -moz-animation: apparition var(--apparition-time) ease-in-out forwards;
   -o-animation: apparition var(--apparition-time) ease-in-out forwards;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+#links a:hover {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 #links a:first-child {
-  animation-delay: calc(var(--sharpness-time) + .1s);
-  -webkit-animation-delay: calc(var(--sharpness-time) + .1s);
-  -moz-animation-delay: calc(var(--sharpness-time) + .1s);
-  -o-animation-delay: calc(var(--sharpness-time) + .1s);
+  animation-delay: calc(var(--sharpness-time) + 0.1s);
+  -webkit-animation-delay: calc(var(--sharpness-time) + 0.1s);
+  -moz-animation-delay: calc(var(--sharpness-time) + 0.1s);
+  -o-animation-delay: calc(var(--sharpness-time) + 0.1s);
 }
 
 #links a:nth-child(2) {
-  animation-delay: calc(var(--sharpness-time) + .3s);
-  -webkit-animation-delay: calc(var(--sharpness-time) + .3s);
-  -moz-animation-delay: calc(var(--sharpness-time) + .3s);
-  -o-animation-delay: calc(var(--sharpness-time) + .3s);
+  animation-delay: calc(var(--sharpness-time) + 0.3s);
+  -webkit-animation-delay: calc(var(--sharpness-time) + 0.3s);
+  -moz-animation-delay: calc(var(--sharpness-time) + 0.3s);
+  -o-animation-delay: calc(var(--sharpness-time) + 0.3s);
 }
 
 #links a:nth-child(3) {
-  animation-delay: calc(var(--sharpness-time) + .5s);
-  -webkit-animation-delay: calc(var(--sharpness-time) + .5s);
-  -moz-animation-delay: calc(var(--sharpness-time) + .5s);
-  -o-animation-delay: calc(var(--sharpness-time) + .5s);
+  animation-delay: calc(var(--sharpness-time) + 0.5s);
+  -webkit-animation-delay: calc(var(--sharpness-time) + 0.5s);
+  -moz-animation-delay: calc(var(--sharpness-time) + 0.5s);
+  -o-animation-delay: calc(var(--sharpness-time) + 0.5s);
 }
 
 #links a:nth-child(4) {
-  animation-delay: calc(var(--sharpness-time) + .7s);
-  -webkit-animation-delay: calc(var(--sharpness-time) + .7s);
-  -moz-animation-delay: calc(var(--sharpness-time) + .7s);
-  -o-animation-delay: calc(var(--sharpness-time) + .7s);
+  animation-delay: calc(var(--sharpness-time) + 0.7s);
+  -webkit-animation-delay: calc(var(--sharpness-time) + 0.7s);
+  -moz-animation-delay: calc(var(--sharpness-time) + 0.7s);
+  -o-animation-delay: calc(var(--sharpness-time) + 0.7s);
 }
 
 #links a:nth-child(5) {
-  animation-delay: calc(var(--sharpness-time) + .9s);
-  -webkit-animation-delay: calc(var(--sharpness-time) + .9s);
-  -moz-animation-delay: calc(var(--sharpness-time) + .9s);
-  -o-animation-delay: calc(var(--sharpness-time) + .9s);
+  animation-delay: calc(var(--sharpness-time) + 0.9s);
+  -webkit-animation-delay: calc(var(--sharpness-time) + 0.9s);
+  -moz-animation-delay: calc(var(--sharpness-time) + 0.9s);
+  -o-animation-delay: calc(var(--sharpness-time) + 0.9s);
 }
 
 #links a:nth-child(6) {
@@ -128,15 +139,8 @@ footer {
   -o-animation-delay: calc(var(--sharpness-time) + 1.5s);
 }
 
-#links a:hover * {
-  animation: flip 1.5s linear .4s;
-  -webkit-animation: flip 1.5s linear .4s;
-  -moz-animation: flip 1.5s linear .4s;
-  -o-animation: flip 1.5s linear .4s;
-}
-
 footer {
-  padding: .5em;
+  padding: 0.5em;
   background-color: #000;
 }
 
@@ -147,22 +151,6 @@ footer {
 
 .bi-c-circle {
   font-size: 1rem;
-}
-
-@keyframes flip {
-  from {
-    transform: rotateY(0);
-    -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -o-transform: rotateY(0);
-  }
-
-  to {
-    transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-  }
 }
 
 @keyframes sharpness {
@@ -232,4 +220,9 @@ body.light #theme-icon {
 body.light #links a {
   border-color: var(--soft-black);
   color: var(--soft-black);
+}
+
+body.light #links a:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
