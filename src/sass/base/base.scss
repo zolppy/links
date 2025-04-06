@@ -1,37 +1,37 @@
 @import "./variables.scss";
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 
-  body {
-    background-color: $soft-black;
-    color: $soft-white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
-    line-height: 1;
-    font-size: 1rem;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    transition: background-color 0.5s ease-out, color 0.5s ease-out;
+    body {
+        background-color: $soft-black;
+        color: $soft-white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+        line-height: 1;
+        font-size: 1rem;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        transition: background-color 0.5s ease-out, color 0.5s ease-out;
 
-    button {
-      border: none;
+        button {
+            border: none;
 
-      &:hover {
-        cursor: pointer;
-      }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
     }
-
-    a {
-      text-decoration: none;
-    }
-  }
 }

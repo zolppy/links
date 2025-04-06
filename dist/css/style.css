@@ -176,7 +176,7 @@ footer {
   background-color: #fff;
   color: #000;
 }
-#container #links a:first-child {
+#container #links a:nth-child(1) {
   animation-delay: 2.1s;
   -webkit-animation-delay: 2.1s;
   -moz-animation-delay: 2.1s;
@@ -217,12 +217,6 @@ footer {
   -webkit-animation-delay: 3.3s;
   -moz-animation-delay: 3.3s;
   -o-animation-delay: 3.3s;
-}
-#container #links a:last-child {
-  animation-delay: 3.5s;
-  -webkit-animation-delay: 3.5s;
-  -moz-animation-delay: 3.5s;
-  -o-animation-delay: 3.5s;
 }
 
 footer {

@@ -1,47 +1,47 @@
 @keyframes sharpness {
-  0% {
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
-    -moz-filter: blur(100px);
-    -o-filter: blur(100px);
-  }
-  25% {
-    filter: blur(75px);
-    -webkit-filter: blur(75px);
-    -moz-filter: blur(75px);
-    -o-filter: blur(75px);
-  }
-  50% {
-    filter: blur(50px);
-    -webkit-filter: blur(50px);
-    -moz-filter: blur(50px);
-    -o-filter: blur(50px);
-  }
-  75% {
-    filter: blur(25px);
-    -webkit-filter: blur(25px);
-    -moz-filter: blur(25px);
-    -o-filter: blur(25px);
-  }
-  100% {
-    filter: blur(0);
-    -webkit-filter: blur(0);
-    -moz-filter: blur(0);
-    -o-filter: blur(0);
-  }
+    0% {
+        filter: blur(100px);
+        -webkit-filter: blur(100px);
+        -moz-filter: blur(100px);
+        -o-filter: blur(100px);
+    }
+    25% {
+        filter: blur(75px);
+        -webkit-filter: blur(75px);
+        -moz-filter: blur(75px);
+        -o-filter: blur(75px);
+    }
+    50% {
+        filter: blur(50px);
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+    }
+    75% {
+        filter: blur(25px);
+        -webkit-filter: blur(25px);
+        -moz-filter: blur(25px);
+        -o-filter: blur(25px);
+    }
+    100% {
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -o-filter: blur(0);
+    }
 }
 
 @keyframes apparition {
-  from {
-    transform: translateX(initial);
-    -webkit-transform: translateX(initial);
-    -moz-transform: translateX(initial);
-    -o-transform: translateX(initial);
-  }
-  to {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
+    from {
+        transform: translateX(initial);
+        -webkit-transform: translateX(initial);
+        -moz-transform: translateX(initial);
+        -o-transform: translateX(initial);
+    }
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
 }
