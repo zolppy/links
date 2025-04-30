@@ -2,7 +2,7 @@ import { LinkList } from "@/app/components/LinkList";
 import { contactLinks } from "@/utils/mocks/linkGroups";
 import { A } from "@/app/components/A";
 
-export default function Socials() {
+export default function Contact() {
     return (
         <LinkList>
             {contactLinks.map(({ id, title, url }) => (
@@ -14,4 +14,4 @@ export default function Socials() {
     );
 }
 
-Socials.displayName = "Socials";
+Contact.displayName = "Contact";
