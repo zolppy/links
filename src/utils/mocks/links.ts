@@ -8,17 +8,17 @@ const brArchitectsLink: Link = {
 };
 const certificationsLink: Link = {
     id: uuid(),
-    title: "Certificações",
+    title: "Certifications",
     url: "https://drive.google.com/drive/folders/1d0CI4v6SahD471GgcGoZ1BvCuf5F-Am-?usp=drive_link",
 };
 const emailLink: Link = {
     id: uuid(),
-    title: "E-mail",
+    title: "Email",
     url: "mailto:gabriel.lcifba@gmail.com",
 };
 const englishResume: Link = {
     id: uuid(),
-    title: "Versão em inglês",
+    title: "English version",
     url: "https://drive.google.com/file/d/1wOmNve_h02Zd8SWgCA4MBwo8QPC6OAlH/view?usp=drive_link",
 };
 const fashionBlogLink: Link = {
@@ -43,7 +43,7 @@ const linkedInLink: Link = {
 };
 const portugueseResume: Link = {
     id: uuid(),
-    title: "Versão em português",
+    title: "Portuguese version",
     url: "https://drive.google.com/file/d/1Jhe10sOdjsSnvRJrBKStHe_BjZKCcQT8/view?usp=drive_link",
 };
 const thinCrustPizzaLink: Link = {

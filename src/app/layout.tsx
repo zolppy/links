@@ -12,7 +12,7 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
     title: "My Links",
-    description: "Link para minhas redes sociais, github, currículos e afins.",
+    description: "Links to my social networks, GitHub, resume and the like.",
     authors: [
         {
             name: "Gabriel Cavalcante de Jesus Oliveira",
@@ -39,9 +39,9 @@ export default function RootLayout({
                         />
                         <H1>Gabriel Cavalcante</H1>
                         <HoleList>
-                            <HoleItem>Desenvolvedor Frontend Júnior</HoleItem>
-                            <HoleItem>Desenvolvedor AI/ML estagiário</HoleItem>
-                            <HoleItem>Engenheiro de Dados estagiário</HoleItem>
+                            <HoleItem>Junior Frontend Developer</HoleItem>
+                            <HoleItem>Intern AI/ML Developer</HoleItem>
+                            <HoleItem>Intern Data Engineer</HoleItem>
                         </HoleList>
                     </Section>
                     <Section>{children}</Section>

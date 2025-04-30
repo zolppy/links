@@ -3,8 +3,8 @@ import me from "../../../public/img/me.png";
 
 const meImg: Img = {
     src: me,
-    title: "Foto Pessoal de Gabriel Cavalcante",
-    alt: "Homem jovem de cabelo escuro e cacheado, usando óculos de armação preta, com bigode e cavanhaque. Ele veste uma camiseta preta e tem uma expressão neutra, olhando para a câmera. O fundo é uma parede branca e lisa.",
+    title: "Gabriel Cavalcante's personal photo",
+    alt: "Young man with dark curly hair, wearing black-framed glasses, with a mustache and goatee. He is wearing a black t-shirt and has a neutral expression, looking at the camera. The background is a plain white wall.",
 };
 
 export { meImg };
