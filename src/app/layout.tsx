@@ -1,6 +1,13 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { raleway } from "@/utils/fonts";
+import { Main } from "@/app/components/Main";
+import { Section } from "@/app/components/Section";
+import { H1 } from "@/app/components/H1";
+import { HoleList } from "@/app/components/HoleList";
+import { HoleItem } from "@/app/components/HoleItem";
+import { meImg } from "@/utils/mocks/images";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -22,7 +29,23 @@ export default function RootLayout({
     return (
         <html lang="pt-br">
             <body className={`${raleway.className} antialiased`}>
-                {children}
+                <Main>
+                    <Section>
+                        <Image
+                            src={meImg.src}
+                            title={meImg.title}
+                            alt={meImg.alt}
+                            className="w-28 rounded-full self-center"
+                        />
+                        <H1>Gabriel Cavalcante</H1>
+                        <HoleList>
+                            <HoleItem>Desenvolvedor Frontend Júnior</HoleItem>
+                            <HoleItem>Desenvolvedor AI/ML estagiário</HoleItem>
+                            <HoleItem>Engenheiro de Dados estagiário</HoleItem>
+                        </HoleList>
+                    </Section>
+                    <Section>{children}</Section>
+                </Main>
             </body>
             <GoogleAnalytics gaId="G-RD9N4G9150" />
         </html>
