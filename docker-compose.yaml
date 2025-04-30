@@ -1,0 +1,6 @@
+services:
+    app:
+        build: .
+        container_name: my-links
+        ports:
+            - 3000:3000
