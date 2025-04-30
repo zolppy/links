@@ -60,7 +60,7 @@ After that, open `http://localhost:3000` on a browser tab.
 
 ## Screenshots
 
-![01](https://github.com/user-attachments/assets/0c2ee2c8-6195-4f86-bf7f-93a3381d33e6)
+![01](https://github.com/user-attachments/assets/add6cbd6-2da3-408c-873f-0d13df0fd6a6)
 
 ## Credits
 
