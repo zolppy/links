@@ -13,6 +13,13 @@ import {
     whatsAppLink,
 } from "@/utils/mocks/links";
 
+const contactLinks: Link[] = [
+    emailLink,
+    githubLink,
+    linkedInLink,
+    whatsAppLink,
+];
+
 const projectLinks: Link[] = [
     brArchitectsLink,
     fashionBlogLink,
@@ -23,6 +30,4 @@ const projectLinks: Link[] = [
 
 const resumeLinks: Link[] = [englishResume, portugueseResume];
 
-const socialLinks: Link[] = [emailLink, githubLink, linkedInLink, whatsAppLink];
-
-export { projectLinks, resumeLinks, socialLinks };
+export { contactLinks, projectLinks, resumeLinks };
