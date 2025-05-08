@@ -4,7 +4,7 @@ import { Link } from "@/utils/types/link";
 const brArchitectsLink: Link = {
     id: uuid(),
     title: "Br Architects",
-    url: "https://br-architects-xi.vercel.app",
+    url: "https://br-architects-zol.vercel.app",
 };
 const certificationsLink: Link = {
     id: uuid(),
@@ -24,7 +24,7 @@ const englishResume: Link = {
 const fashionBlogLink: Link = {
     id: uuid(),
     title: "Fashion Blog",
-    url: "https://fashion-blog-i.vercel.app/",
+    url: "https://fashion-blog-zol.vercel.app",
 };
 const githubLink: Link = {
     id: uuid(),
@@ -34,12 +34,12 @@ const githubLink: Link = {
 const interiorDesignLink: Link = {
     id: uuid(),
     title: "Interior Design",
-    url: "https://interior-design-vii.vercel.app",
+    url: "https://interior-design-zol.vercel.app",
 };
 const linkedInLink: Link = {
     id: uuid(),
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/zolppy/",
+    url: "https://www.linkedin.com/in/zolppy",
 };
 const portugueseResume: Link = {
     id: uuid(),
@@ -49,12 +49,12 @@ const portugueseResume: Link = {
 const thinCrustPizzaLink: Link = {
     id: uuid(),
     title: "Thin Crust Pizza",
-    url: "https://thin-crust-pizza.vercel.app/",
+    url: "https://thin-crust-pizza.vercel.app",
 };
 const travelAgencyLink: Link = {
     id: uuid(),
     title: "Travel Agency",
-    url: "https://travel-agency-fawn.vercel.app/",
+    url: "https://travel-agency-zol.vercel.app",
 };
 const whatsAppLink: Link = {
     id: uuid(),
