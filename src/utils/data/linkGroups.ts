@@ -11,7 +11,7 @@ import {
     thinCrustPizzaLink,
     travelAgencyLink,
     whatsAppLink,
-} from "@/utils/mocks/links";
+} from "@/utils/data/links";
 
 const contactLinks: Link[] = [
     emailLink,
