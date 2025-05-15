@@ -79,5 +79,6 @@ export {
   portugueseResume,
   thinCrustPizzaLink,
   travelAgencyLink,
+  wizardRegisterLink,
   whatsAppLink,
 };

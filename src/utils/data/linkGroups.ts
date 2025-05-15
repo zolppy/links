@@ -10,6 +10,7 @@ import {
     portugueseResume,
     thinCrustPizzaLink,
     travelAgencyLink,
+    wizardRegisterLink,
     whatsAppLink,
 } from "@/utils/data/links";
 
@@ -26,6 +27,7 @@ const projectLinks: Link[] = [
     interiorDesignLink,
     thinCrustPizzaLink,
     travelAgencyLink,
+    wizardRegisterLink,
 ];
 
 const resumeLinks: Link[] = [englishResume, portugueseResume];
