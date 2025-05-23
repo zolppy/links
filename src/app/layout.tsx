@@ -41,7 +41,8 @@ export default function RootLayout({
             <HoleList>
               <HoleItem>Junior Frontend Developer</HoleItem>
               <HoleItem>Intern AI/ML Developer</HoleItem>
-              <HoleItem>Intern Data Engineer</HoleItem>
+              <HoleItem>AWS Cloud Computing</HoleItem>
+              <HoleItem>3x AI Certified</HoleItem>
             </HoleList>
           </Section>
           <Section>{children}</Section>
