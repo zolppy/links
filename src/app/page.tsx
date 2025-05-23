@@ -1,15 +1,25 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { LinkList } from "@/app/components/LinkList";
-import { A } from "@/app/components/A";
-import { LinkItem } from "@/app/components/LinkItem";
+import { Anchor } from "@/app/components/Anchor";
+import { Btn } from "@/app/components/Btn";
 import { certificationsLink } from "@/utils/data/links";
 
 export default function Home() {
+  const router = useRouter();
+  const { url, title } = certificationsLink;
+
+  function goTo(destiny: "/contacts" | "/projects" | "/resumes") {
+    router.push(destiny);
+  }
+
   return (
     <LinkList>
-      <A url={certificationsLink.url}>{certificationsLink.title}</A>
-      <LinkItem url="/contacts">Contacts</LinkItem>
-      <LinkItem url="/projects">Projects</LinkItem>
-      <LinkItem url="/resumes">Resumes</LinkItem>
+      <Anchor href={url}>{title}</Anchor>
+      <Btn onClick={() => goTo("/contacts")}>Contacts</Btn>
+      <Btn onClick={() => goTo("/projects")}>Projects</Btn>
+      <Btn onClick={() => goTo("/resumes")}>Resumes</Btn>
     </LinkList>
   );
 }

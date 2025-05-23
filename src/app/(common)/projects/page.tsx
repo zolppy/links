@@ -1,14 +1,14 @@
 import { LinkList } from "@/app/components/LinkList";
 import { projectLinks } from "@/utils/data/linkGroups";
-import { A } from "@/app/components/A";
+import { Anchor } from "@/app/components/Anchor";
 
 export default function Projects() {
   return (
     <LinkList>
       {projectLinks.map(({ id, title, url }) => (
-        <A key={id} url={url}>
+        <Anchor key={id} href={url}>
           {title}
-        </A>
+        </Anchor>
       ))}
     </LinkList>
   );
