@@ -19,7 +19,7 @@ const emailLink: Link = {
 const englishResume: Link = {
   id: uuid(),
   title: "English version",
-  url: "https://drive.google.com/file/d/1XUHr_Otdt1XNJlz7i6Jss2t0rNefkFDz/view?usp=drive_link",
+  url: "https://drive.google.com/file/d/1H-_UN8E67JTppIoWOrc2y9ra7kMhfLz-/view?usp=drive_link",
 };
 const fashionBlogLink: Link = {
   id: uuid(),
@@ -44,7 +44,7 @@ const linkedInLink: Link = {
 const portugueseResume: Link = {
   id: uuid(),
   title: "Portuguese version",
-  url: "https://drive.google.com/file/d/1BP_mEMo_hsF7ot1lGQ1VuDsRRIlqJB7X/view?usp=drive_link",
+  url: "https://drive.google.com/file/d/1U3Pl0b9ZwAS861Zs5qlbW9lllk7jCUTu/view?usp=drive_link",
 };
 const thinCrustPizzaLink: Link = {
   id: uuid(),
