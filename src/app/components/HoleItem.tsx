@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
 interface HoleItem {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export function HoleItem({ children }: HoleItem) {
-    return <li>{children}</li>;
+  return <li className="text-lg">{children}</li>;
 }
 
 HoleItem.displayName = "HoleItem";

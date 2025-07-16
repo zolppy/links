@@ -16,11 +16,6 @@ const emailLink: Link = {
   title: "Email",
   url: "mailto:gabriel.lcifba@gmail.com",
 };
-const englishResume: Link = {
-  id: uuid(),
-  title: "English version",
-  url: "https://drive.google.com/file/d/1H-_UN8E67JTppIoWOrc2y9ra7kMhfLz-/view?usp=drive_link",
-};
 const fashionBlogLink: Link = {
   id: uuid(),
   title: "Fashion Blog",
@@ -41,10 +36,10 @@ const linkedInLink: Link = {
   title: "LinkedIn",
   url: "https://www.linkedin.com/in/zolppy",
 };
-const portugueseResume: Link = {
+const resumeLink: Link = {
   id: uuid(),
-  title: "Portuguese version",
-  url: "https://drive.google.com/file/d/1U3Pl0b9ZwAS861Zs5qlbW9lllk7jCUTu/view?usp=drive_link",
+  title: "Resume",
+  url: "https://resume-zol.vercel.app",
 };
 const thinCrustPizzaLink: Link = {
   id: uuid(),
@@ -71,12 +66,11 @@ export {
   brArchitectsLink,
   certificationsLink,
   emailLink,
-  englishResume,
   fashionBlogLink,
   githubLink,
   interiorDesignLink,
   linkedInLink,
-  portugueseResume,
+  resumeLink,
   thinCrustPizzaLink,
   travelAgencyLink,
   wizardRegisterLink,
