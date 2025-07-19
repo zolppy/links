@@ -1,4 +1,4 @@
-# My Links
+# Links
 
 ![Next](https://img.shields.io/badge/NEXT-15.3.1-red)
 ![Third Parties](<https://img.shields.io/badge/THIRD PARTIES-15.3.1-blue>)
