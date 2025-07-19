@@ -1,11 +1,6 @@
 import { v4 as uuid } from "uuid";
 import { Link } from "@/utils/types/link";
 
-const brArchitectsLink: Link = {
-  id: uuid(),
-  title: "Br Architects",
-  url: "https://br-architects-zol.vercel.app",
-};
 const certificationsLink: Link = {
   id: uuid(),
   title: "Certifications",
@@ -16,20 +11,10 @@ const emailLink: Link = {
   title: "Email",
   url: "mailto:gabriel.lcifba@gmail.com",
 };
-const fashionBlogLink: Link = {
-  id: uuid(),
-  title: "Fashion Blog",
-  url: "https://fashion-blog-zol.vercel.app",
-};
 const githubLink: Link = {
   id: uuid(),
   title: "GitHub",
   url: "https://github.com/zolppy",
-};
-const interiorDesignLink: Link = {
-  id: uuid(),
-  title: "Interior Design",
-  url: "https://interior-design-zol.vercel.app",
 };
 const linkedInLink: Link = {
   id: uuid(),
@@ -41,38 +26,22 @@ const resumeLink: Link = {
   title: "Resume",
   url: "https://resume-zol.vercel.app",
 };
-const thinCrustPizzaLink: Link = {
-  id: uuid(),
-  title: "Thin Crust Pizza",
-  url: "https://thin-crust-pizza.vercel.app",
-};
-const travelAgencyLink: Link = {
-  id: uuid(),
-  title: "Travel Agency",
-  url: "https://travel-agency-zol.vercel.app",
-};
-const wizardRegisterLink: Link = {
-  id: uuid(),
-  title: "Wizard Register",
-  url: "https://wizard-register.vercel.app",
-};
 const whatsAppLink: Link = {
   id: uuid(),
   title: "WhatsApp",
   url: "http://wa.me/5574981343313",
 };
+const projectsLink: Link = {
+  title: "Projects",
+  url: "https://projects-zol.vercel.app",
+};
 
 export {
-  brArchitectsLink,
   certificationsLink,
   emailLink,
-  fashionBlogLink,
   githubLink,
-  interiorDesignLink,
   linkedInLink,
   resumeLink,
-  thinCrustPizzaLink,
-  travelAgencyLink,
-  wizardRegisterLink,
   whatsAppLink,
+  projectsLink,
 };
