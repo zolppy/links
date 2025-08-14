@@ -7,7 +7,6 @@ import { Section } from "@/app/components/Section";
 import { H1 } from "@/app/components/H1";
 import { HoleList } from "@/app/components/HoleList";
 import { HoleItem } from "@/app/components/HoleItem";
-import { meImg } from "@/utils/data/images";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -32,14 +31,15 @@ export default function RootLayout({
         <Main>
           <Section>
             <Image
-              src={meImg.src}
-              title={meImg.title}
-              alt={meImg.alt}
-              className="w-28 rounded-full self-center"
+              src="https://avatars.githubusercontent.com/u/94535032?v=4"
+              alt=""
+              height={112}
+              width={112}
+              className="rounded-full self-center"
             />
             <H1>Gabriel Cavalcante</H1>
             <HoleList>
-              <HoleItem>Software Developer</HoleItem>
+              <HoleItem>Front-end & AI/ML Developer</HoleItem>
             </HoleList>
           </Section>
           <Section>{children}</Section>
