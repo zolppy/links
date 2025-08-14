@@ -39,7 +39,7 @@ export default function RootLayout({
             />
             <H1>Gabriel Cavalcante</H1>
             <HoleList>
-              <HoleItem>Front-end & AI/ML Developer</HoleItem>
+              <HoleItem>AI/ML | Front-end | Cloud Computing</HoleItem>
             </HoleList>
           </Section>
           <Section>{children}</Section>
