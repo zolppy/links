@@ -1,6 +1,5 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { raleway } from "@/utils/fonts";
 import { Main } from "@/app/components/Main";
 import { Section } from "@/app/components/Section";
@@ -45,7 +44,6 @@ export default function RootLayout({
           <Section>{children}</Section>
         </Main>
       </body>
-      <GoogleAnalytics gaId="G-RD9N4G9150" />
     </html>
   );
 }
