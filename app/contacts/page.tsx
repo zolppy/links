@@ -3,7 +3,7 @@ import { Anchor } from "@/components/Anchor/Anchor";
 export default function Contacts() {
   return (
     <>
-      <Anchor href="mailto:zolppy@protonmail.com" target="_blank">
+      <Anchor href="mailto:zolppy.me@gmail.com" target="_blank">
         E-mail
       </Anchor>
       <Anchor href="https://github.com/zolppy" target="_blank">
