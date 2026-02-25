@@ -1,67 +1,36 @@
-# Links
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-![Next](https://img.shields.io/badge/NEXT-15.3.1-red)
-![Third Parties](<https://img.shields.io/badge/THIRD PARTIES-15.3.1-blue>)
-![React](https://img.shields.io/badge/REACT-19.0.0-indigo)
-![Tailwind CSS](<https://img.shields.io/badge/TAILWIND CSS-4.0.0-white>)
-![TypeScript](https://img.shields.io/badge/TYPESCRIPT-5.0.0-brown)
-![Tailwind Merge](<https://img.shields.io/badge/TAILWIND MERGE-3.2.0-pink>)
-![UUID](https://img.shields.io/badge/UUID-11.1.0-cyan)
-![Status](https://img.shields.io/badge/STATUS-FINISHED-green)
-![License](https://img.shields.io/badge/LICENSE-MIT-yellow)
+## Getting Started
 
-Links to my social networks, GitHub, resume and the like.
-
-## Features
-
-- Responsive design;
-- Consistent design;
-- Links to social medias;
-- Links to resumes (English and Portuguese versions);
-- Links to projects;
-- Link to certifications.
-
-## Technologies
-
--   Next.js;
--   Tailwind CSS;
--   React
--   TypeScript;
--   Docker.
-
-## Demo
-
-You can access the page [here](https://my-links-zol.vercel.app).
-
-## How to run
-
-### By docker
-
-Run the following command on a console:
+First, run the development server:
 
 ```bash
-docker compose up -d
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-After some time, open `http://localhost:3000` on a browser tab.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### By npm/yarn
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Run the following commands on a console:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```bash
-git clone git@github.com:zolppy/my-links.git
-cd my-links
-npm install # or "yarn"
-npm run dev # or "yarn run dev"
-```
+## Learn More
 
-After that, open `http://localhost:3000` on a browser tab.
+To learn more about Next.js, take a look at the following resources:
 
-## Screenshots
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-![01](https://github.com/user-attachments/assets/add6cbd6-2da3-408c-873f-0d13df0fd6a6)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Credits
+## Deploy on Vercel
 
-The **design** was **inspired** by [Linktree](https://linktr.ee/)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
