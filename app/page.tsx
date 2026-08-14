@@ -16,7 +16,7 @@ export default function Home() {
       >
         Contacts
       </Link>
-      <Anchor href="https://projects-zol.vercel.app" target="_blank">
+      <Anchor href="https://portfolio-zol.vercel.app" target="_blank">
         Projects
       </Anchor>
       <Anchor href="https://resume-zol.vercel.app" target="_blank">
